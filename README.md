@@ -114,7 +114,10 @@ This feature is supposed to represent the number of days with bad physical healt
 ```python
 # Replace None with appropriate text
 """
-None
+Yes, there is an issue. The PHYSHLTH column shows impossible values such as 88 and 99. 
+According to the CDC coding, 88 means 'None' (0 days), 77 means 'Don't know', and 99 means 
+'Refused'. Valid values should only be between 0 and 30 days. These codes need to be cleaned 
+or recoded before we can analyze the data properly.
 """
 ```
 
